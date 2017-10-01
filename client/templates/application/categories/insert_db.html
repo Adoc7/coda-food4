@@ -1,0 +1,150 @@
+<template name="pizzas">
+
+    <div class="deb">
+        <label class="control-label">{{name}}</label>
+
+
+        {{#each pizzas}}
+            <form class="formulaire">
+            <div class="conteneur_prodPi">
+                <img src="/{{image}}" class="prod"/>
+                <div class="pizza"><b>{{name}}</b> </div>
+                    <div class="ingredPi"> Ingrédients : {{description}}</div>
+                    <div class="prix">Prix : {{price}} euros</div>
+
+                <!--<label>-->
+                <div class="increment">
+                <input class="text1" name="qte" type="text" value="Qté :">
+                    <input class="compteur text2" name="inputcompteur" type="number" min=0 max=7 value=0>
+                </div>
+                    <input class="commander text3" name="commander" type="submit" value="valider">
+                    <!--</label>-->
+               </div>
+            </form>
+            {{/each}}
+     </div>
+</template>
+
+<template name="burgers">
+    <div class="deb">
+        <label class="control-label">{{name}}</label>
+        {{#each burgers}}
+        <form class="formulaire">
+            <div class="conteneur_prodBu">
+                <img src="/{{image}}" class="prod"/>
+                <div class="pizza"><b>{{name}}</b> </div>
+                <div class="ingredBu"> Ingrédients : {{description}}</div>
+                <div class="prix">Prix : {{price}} euros</div>
+
+                <!--<label>-->
+                <div class="increment">
+                    <input class="text1" name="qte" type="text" value="Qté :">
+                    <input class="compteur text2" name="inputcompteur" type="number" min=0 max=7 value=0>
+                </div>
+                <input class="commander text3" type="submit" name="commander" value="valider">
+                <!--</label>-->
+            </div>
+        </form>
+        {{/each}}
+    </div>
+</template>
+
+
+<template name="salades">
+    <div class="deb">
+        <label class="control-label">{{name}}</label>
+        {{#each salades}}
+        <form class="formulaire">
+            <div class="conteneur_prodSa">
+                <img src="/{{image}}" class="prod"/>
+                <div class="pizza"><b>{{name}}</b> </div>
+                <div class="ingredSa"> Ingrédients : {{description}}</div>
+                <div class="prix">Prix : {{price}} euros</div>
+
+                <!--<label>-->
+                <div class="increment">
+                    <input class="text1" name="qte" type="text" value="Qté :">
+                    <input class="compteur text2" name="inputcompteur" type="number" min=0 max=7 value=0>
+                </div>
+                <input class="commander text3" type="submit" name="commander" value="valider">
+                <!--</label>-->
+            </div>
+        </form>
+        {{/each}}
+    </div>
+</template>
+
+
+<template name="desserts">
+    <div class="deb">
+        <label class="control-label">{{name}}</label>
+        {{#each desserts}}
+        <form class="formulaire">
+            <div class="conteneur_prodDeBo">
+                <img src="/{{image}}" class="prod"/>
+                <div class="pizza"><b>{{name}}</b> </div>
+                <div class="prix">Prix : {{price}} euros</div>
+
+                <!--<label>-->
+                <div class="increment">
+                    <input class="text1" name="qte" type="text" value="Qté :">
+                    <input class="compteur text2" name="inputcompteur" type="number" min=0 max=7 value=0>
+                </div>
+                <input class="commander text3" type="submit" name="commander" value="valider">
+                <!--</label>-->
+            </div>
+        </form>
+        {{/each}}
+    </div>
+</template>
+
+
+<template name="boissons">
+    <div class="deb">
+        <label class="control-label">{{name}}</label>
+        {{#each boissons}}
+        <form class="formulaire">
+            <div class="conteneur_prodDeBo">
+                <img src="/{{image}}" class="prod"/>
+                <div class="pizza"><b>{{name}}</b> </div>
+                <div class="prix">Prix : {{price}} euros</div>
+
+                <!--<label>-->
+                <div class="increment">
+                    <input class="text1" name="qte" type="text" value="Qté :">
+                    <input class="compteur text2" name="inputcompteur" type="number" min=0 max=7 value=0>
+                </div>
+                <input class="commander text3" type="submit" name="commander" value="valider">
+                <!--</label>-->
+            </div>
+        </form>
+        {{/each}}
+    </div>
+</template>
+
+
+<!--<template name="boissons">-->
+    <!--<div class="deb">-->
+        <!--<label class="control-label">{{name}}</label>-->
+        <!--{{#each boissons}}-->
+        <!--<form class="formulaire">-->
+            <!--<div class="conteneur_prodDeBo">-->
+                <!--<img src="/{{image}}" class="prod"/>-->
+                <!--<div class="pizza" >-->
+                    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+                    <!--<b>{{name}}</b> </div>-->
+                <!--<div class="ingredDeBo"></div>-->
+                <!--<div class="prix" >-->
+                    <!--Prix : {{price}} euros</div>-->
+                <!--<span>{{> pizzas_count}}   </span>-->
+            <!--</div>-->
+            <!--<br>-->
+        <!--</form>-->
+        <!--{{/each}}-->
+    <!--</div>-->
+<!--</template>-->
+
+
+
+
+
