@@ -26,9 +26,9 @@ Template.panier.events({
         Panier.update(this._id, {
             name:this.name,
             price:this.price,
-            image:this.image,
             counter:compteur,
             total:this.price*compteur,
+            image:this.image,
             _id:this._id
         });
     },

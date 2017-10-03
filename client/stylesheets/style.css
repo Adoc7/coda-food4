@@ -2,6 +2,29 @@ html{
     height:100%;
 }
 
+#nom, #prenom, #mail, #mdp, #phone, #numberR, #nomR, #cpV, #ville{
+    width:25%;
+
+}
+
+#nom, #prenom, #mail, #mdp, #phone, #numberR, #typeR, #nomR, #cpV, #ville{
+    background-color:rgba(0,0,0,0.5);
+    color:red;
+
+    border:none;
+}
+
+#coord{
+    color:black!important;
+    padding:20px;
+    font-size:10px;
+}
+
+/*#numberR{*/
+    /*width:10%;*/
+/*}*/
+
+
 /*.regist{*/
     /*margin-right:50px;*/
     /*background-color:grey;*/
@@ -278,6 +301,11 @@ font-size:16px;
 }
 .control-label{
     font-size:15vw;
+    color:rgba(255,255,150,0.5)
+}
+
+.control-label2{
+    font-size:7vw;
     color:rgba(255,255,150,0.5)
 }
 

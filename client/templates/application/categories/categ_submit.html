@@ -1,0 +1,42 @@
+<template name="postSubmit">
+    <form class="main form page">
+        <div class="form-group">
+            <label class="control-label2" for="url">Qui êtes vous ?</label>
+            <div class="controls">
+                <input name="nom" id="nom" type="text" value="" placeholder="Votre nom" class="form-control"/>
+                <input name="prenom" id="prenom" type="text" value="" placeholder="Votre prénom" class="form-control"/>
+                <input name="mail" id="mail" type="email" value="" placeholder="Votre e-mail" class="form-control"/>
+                <input name="mdp" id="mdp" type="password" value="" placeholder="Votre mot de passe" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label2" for="title">Vos coordonnées ?</label>
+            <div class="controls">
+                <input name="tel" id="phone" type="text" value="" placeholder="Numéro de telephone" class="form-control"/>
+                <input name="numeroR" id="numberR" type="text" value="" placeholder="Numéro de rue : " class="form-control"/>
+                <!--<form action="">-->
+                <select name="typeR" value="" id="typeR" size="1">
+                <option>rue</option>
+                <option>avenue</option>
+                <option>boulevard</option>
+            </select>
+                <!--</form>-->
+
+                <input name="nomR" id="nomR" type="text" value="" placeholder="Nom de voie" class="form-control"/>
+                <input name="cpV" id="cpV" type="text" value="" placeholder="Code postal" class="form-control"/>
+                <input name="ville" id="ville" type="text" value="" placeholder="Ville ou village" class="form-control"/>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
+</template>
+
+
+
+<!-- - Nom-->
+<!-- - Prénom-->
+<!-- - email-->
+<!-- - Mot de passe-->
+<!-- - Numero de téléphone-->
+<!-- - Adresse de livraison(numero de rue, nom de rue, ville)-->
+<!-- - Commentaire(pour un accès difficile...)-->

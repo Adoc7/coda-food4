@@ -1,6 +1,4 @@
 <template name="header">
-
-
     <div class="brick">
         <img id="logo" src="/logoCODAFOOD2.png" alt="">
 
@@ -19,29 +17,31 @@
             </button>
             <a class="navbar-brand" href="{{pathFor 'Categories'}}">Coda Food</a>
         </div>
-
-
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav">
                 <!--{{#if currentUser}}-->
+                <li><a href="{{pathFor 'postSubmit'}}">INSCRIPTION</a></li>
                 <li>
                     <a class="panier" href="/panier">PANIER<i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i></a>
                 </li>
-                <!--{{/if}}-->
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
                 {{> loginButtons}}
+
+                {{#if currentUser}}
+                {{> categoriePage2}}
+                {{/if}}
             </ul>
         </div>
-        <header class="col-md-12 jumbotron">
-            <h1>
-                {{getGlobal 'appName' }} <br />
-                {{#if getGlobal 'appSlogan' }}
-                <small class="slogan">{{getGlobal 'appSlogan'}}</small>
-                {{/if}}
-            </h1>
-        </header>
-
-
+        <!--<header class="col-md-12 jumbotron">-->
+                <!--<p>{{> login}}</p>-->
+            <!--<h1>-->
+                <!--{{getGlobal 'appName' }} <br />-->
+                <!--{{#if getGlobal 'appSlogan' }}-->
+                <!--<small class="slogan">{{getGlobal 'appSlogan'}}</small>-->
+                <!--{{/if}}-->
+            <!--</h1>-->
+        <!--</header>-->
     </nav>
 </template>
