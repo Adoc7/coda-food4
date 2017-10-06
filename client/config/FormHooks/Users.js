@@ -1,8 +1,3 @@
-
-
-
-
-
 // AutoForm.hooks({
 //     'insertUser': {
 //         onSubmit: function(doc){ // Gestion du formulaire d'inscription

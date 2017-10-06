@@ -4,13 +4,11 @@ html{
 
 #nom, #prenom, #mail, #mdp, #phone, #numberR, #nomR, #cpV, #ville{
     width:25%;
-
 }
 
 #nom, #prenom, #mail, #mdp, #phone, #numberR, #typeR, #nomR, #cpV, #ville{
     background-color:rgba(0,0,0,0.5);
     color:red;
-
     border:none;
 }
 
@@ -18,6 +16,10 @@ html{
     color:black!important;
     padding:20px;
     font-size:10px;
+}
+
+.admin{
+    color:black;
 }
 
 /*#numberR{*/
@@ -58,24 +60,11 @@ html{
     -moz-transition: all .6s ease-in;
     -o-transition: all .6s ease-in;
     transition: all .6s ease-in;
-}
-.bouton_commande_texte:hover{
-    /*font-size:2vw;*/
     font-weight:bold;
     text-decoration:none;
-    color:rgba(0,0,0,0.9);
-    /*color:rgba(15,100,15,0.9);*/
-    /*color:seagreen;*/
+    color:rgba(0,0,0,0.9)!important;
 }
 
-.bouton_commande_texte{
-    vertical-align: middle;
-    font-size:3vw;
-    font-weight:bold;
-    text-decoration:none;
-    /*color:rgba(5,150,5,0.7);*/
-    color:rgba(255,255,255,0.7);
-}
 .bouton{
 text-align: center;
     margin-left:auto;
@@ -89,11 +78,16 @@ text-align: center;
     /*letter-spacing:-0.2vw;*/
     border:0.2vw solid white;
     background-color:rgba(0,0,0,0.7);
-
     /*background-color: rgba(255,255,255,0.6);*/
+
+
+    vertical-align: middle;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    /*color:rgba(5,150,5,0.7);*/
+    color:rgba(255,255,255,0.7)!important;
 }
-
-
 
 .deb{
     /*float: right;*/
@@ -128,19 +122,27 @@ text-align: center;
 
 .TitreHome{
     text-align:center;
-    font-size:5vw;
-    background-color: rgba(0,0,0,0.6);
+    font-size:50px;
+    /*background-color: rgba(0,0,0,0.6);*/
 }
 
+/*.prodHome{*/
+    /*display:block;*/
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+    /*margin-top: 1vw;*/
+    /*margin-bottom: 1vw;*/
+    /*!*width:380px;*!*/
+    /*width:38vw;*/
+    /*height:auto;*/
+/*}*/
+
+
 .prodHome{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    /*width:380px;*/
-    width:38vw;
-    height:auto;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    width:auto;
+    height:123px;
 }
 
 .pan_prix,
@@ -174,7 +176,6 @@ text-align: center;
     padding:5%;
     width:45%;
     background-color: rgba(25,7,5,0.6);
-
 }
 
 .conteneur_valid_total_pan{
@@ -182,22 +183,16 @@ text-align: center;
     padding:5%;
     width:50%;
     background-color: rgba(10,70,100,0.5);
-
 }
-
 
 .pan{
     /*position:absolute;*/
  /*height:150px;*/
-
-
     background: -webkit-linear-gradient(uo, rgba(0,0,0,1), rgba(120,5,5,1)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom, rgba(120,5,5,1), rgba(0,0,0,0.1)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient( bottom, rgba(120,5,5,1), rgba(0,0,0,0.1)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom, rgba(120,5,5,1), rgba(0,0,0,0.1)); /* Standard syntax (must be last) */
 }
-
-
 
 .conteneur_prodPi,
 .conteneur_prodSa,
@@ -215,6 +210,28 @@ text-align: center;
     /*margin-bottom: 10px;*/
 }
 
+.conteneur_prodHo{
+    position: relative;
+    /*float: left;*/
+    display: inline-block;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    border: 1px solid rgba(255,255,255,0.5) ;
+    background-image: url("bg.png");
+
+    background-color: rgba(25,7,5,0.6);
+    width:210px;
+    margin-bottom:100px;
+    /*display:block;*/
+    /*float:left;*/
+    text-align: center;
+    /*padding-left: auto;*/
+    /*padding-right: auto;*/
+    /*margin-top: 15px;*/
+    /*margin-bottom: 10px;*/
+    height:550px;
+
+}
 
 .prod{
        margin-top: 15px;
@@ -274,8 +291,6 @@ font-size:16px;
 
 }
 
-
-
 .conteneur_prodPi{
     height:550px;
 }
@@ -308,9 +323,7 @@ font-size:16px;
     font-size:7vw;
     color:rgba(255,255,150,0.5)
 }
-
-
-
+.home,
 .ingredPi,
 .ingredSa,
 .ingredBu,
@@ -337,7 +350,12 @@ font-size:16px;
     background:rgba(0,40,50,0.7)!important;
 }
 
-
+.home{
+    height:70px;
+    font-size:16px;
+    background-color: black;
+    padding: 12px;
+}
 .ingredPi,
 .ingredSa,
 .ingredBu,
@@ -403,7 +421,6 @@ font-size:16px;
     background:rgba(0,200,0,0.6);
     font-weight:bold;
 }
-
 
 .text4:hover{
     color:white!important;
@@ -508,16 +525,10 @@ color:white!important;
     margin-right:auto;
     margin-top:2%;
     margin-bottom:-9%;
-
     width: 30%;
     height:auto;
     /*color:white;*/
 }
-
-
-
-
-
 
 .produits{
     /*margin-top:50px;*/
@@ -545,7 +556,6 @@ color:white!important;
     height:auto;
     border-radius:60px;
     border: solid white 1px;
-
     text-align: center;
     /*vertical-align: sub;*/
     font-weight: 900;
@@ -557,11 +567,7 @@ color:white!important;
 .text_prod1{
     /*margin-left:-8%;*/
     /*margin-right:-8%;*/
-
-
 }
-
-
 
 .fond-translucide1{
     background: rgba(40, 80, 40,0.7);
@@ -590,9 +596,7 @@ body {
     /*font-size:2.5em;*/
     /*-webkit-filter: grayscale(100%); !* Pour les navigateurs Chrome, Safari, Opera *!*/
     /*filter: grayscale(100%); !* Firefox *!*/
-
     background-image: url("black-brick-textures.jpg");
-
     background-repeat: repeat;
     background-position: left top;
     background-attachment: fixed;
@@ -611,15 +615,12 @@ body {
     width: 100%;
 }
 
-
 /*"navbar */
 .navbar-default{
     background-color: rgba(255,253,200,1);
     /*background-image: url("black-brick-textures.jpg");*/
-
     margin-bottom: 50px!important;
 }
-
 
 .navbar {
     padding:4% 0 4% 0!important;
@@ -640,7 +641,6 @@ body {
 .navbar-brand{
     /*padding-top: 5vw!important;*/
     /*padding-bottom: 5vw!important;*/
-
     /*font-size: 8vw!important;*/
     font-weight: bolder!important;
     color:red!important;
@@ -659,8 +659,6 @@ body {
 #spinner {
     height: 300px;
 }
-
-
 
 .post {
     /* For modern browsers */
@@ -796,6 +794,7 @@ body {
     bottom: 0px;
     pointer-events: none;
 }
+
 .alert {
     animation: fadeOut 2700ms ease-in 0s 1 forwards;
     -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;

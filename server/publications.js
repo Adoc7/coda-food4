@@ -29,3 +29,35 @@ Meteor.publish('validation', function(){
 // Meteor.publish('register', function(){
 //     return Register.find();
 // });
+
+
+//
+// Meteor.publish( 'bankAccountInfo', function() {
+//     if ( Roles.userIsInRole( this.userId, 'register', 'owners' ) ) {
+//         return BankAccounts.find();
+//     } else {
+//         this.stop();
+//         return
+//     }
+// });
+
+
+Meteor.publish( 'keys', function() {
+    if ( Roles.userIsInRole( this.userId, 'knives', 'chefs' ) ) {
+        return Knives.find();
+    } else {
+        this.stop();
+        return
+    }
+});
+
+Meteor.publish( 'knives', function() {
+    if ( Roles.userIsInRole( this.userId, 'customers' ) ) {
+        return Foods.find();
+    } else {
+        this.stop();
+        return
+    }
+});
+
+

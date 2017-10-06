@@ -1,21 +1,22 @@
 <template name="categories">
-    <div>
+    <div class="deb">
+        <label class="control-label">{{name}}</label>
         {{#each categories}}
-        <div class="conteneur_home">
-            <div class="TitreHome">
-                <b>{{name}}</b>
-            </div>
-            <br>
-            <img src="/{{image}}" class="prodHome"/>
-            <br>
-            <div class="bouton">
-            <span class="bouton_commande">
-            <a class="bouton_commande_texte" href="/pages/{{name}}">Voir la liste</a>
-            </span>
-            </div>
-        </div>
-        <br>
-        {{/each}}
 
+            <div class="conteneur_prodHo">
+                <div class="TitreHome">
+                    <b class="home">{{name}}</b>
+                </div>
+                <br>
+                <img src="/{{image}}" class="prodHome"/>
+                <br>
+                <div class="bouton">
+            <span class="">
+            <a class="bouton_commande" href="/pages/{{name}}">Voir la liste</a>
+            </span>
+                </div>
+            </div>
+
+        {{/each}}
     </div>
 </template>
